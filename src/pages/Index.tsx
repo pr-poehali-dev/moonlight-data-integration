@@ -9,6 +9,7 @@ import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { CarsCatalogSection } from "@/components/cars-catalog-section"
 
 export default function Index() {
   return (
@@ -17,6 +18,7 @@ export default function Index() {
       <main>
         <Hero3D />
         <FeaturesSection />
+        <CarsCatalogSection />
         <section id="technology">
           <TechnologySection />
         </section>
