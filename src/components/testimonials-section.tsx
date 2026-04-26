@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
-    content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
-  },
-  {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
+    name: "Алексей Соколов",
+    role: "Клиент из Москвы",
     avatar: "/cybersecurity-expert-man.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Заказал Toyota Land Cruiser из Японии. Всё прошло чисто и быстро — машина пришла в отличном состоянии, ровно как на фото. Комиссия действительно минимальная.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
+    name: "Марина Иванова",
+    role: "Клиент из Санкт-Петербурга",
+    avatar: "/professional-woman-scientist.png",
+    content:
+      "Брала Hyundai из Кореи. Менеджер был на связи 24/7, подробно объяснял каждый этап. Получила авто быстрее, чем ожидала. Рекомендую!",
+  },
+  {
+    name: "Дмитрий Пахомов",
+    role: "Клиент из Екатеринбурга",
     avatar: "/asian-woman-tech-developer.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "Взял BYD из Китая — доволен на 100%. Цена вышла ниже рынка на 15%. CarRich сделали всё: документы, растаможку, учёт. Приехал забирать готовую машину.",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Довольные клиенты</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Сотни автомобилей доставлены — вот что говорят наши клиенты
           </p>
         </div>
 
