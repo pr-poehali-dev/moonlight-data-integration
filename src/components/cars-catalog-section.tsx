@@ -39,13 +39,6 @@ type Car = {
 
 const japanCars: Car[] = [
   {
-    id: 1, model: "Toyota Land Cruiser 300", year: 2022, mileage: 28000,
-    auctionPrice: 5800000, deliveryPrice: 620000, totalVlad: 6420000,
-    grade: "4.5", color: "Белый перламутр", engine: "3.5 V6 Twin Turbo", badge: "Топ лот", hot: true,
-    image: "https://cdn.poehali.dev/projects/95ad7d9d-7198-4f62-a0f1-ef6ab57708f4/files/4b217184-2172-453e-b1e1-33447412ff89.jpg",
-    detail: { auctionYen: 5800000, auctionRub: 3480000, exportFee: 120000, transportJP: 80000, seaFreight: 280000, customsDuty: 1050000, exciseTax: 490000, vat: 0, sbkts: 85000, registration: 45000, ourFee: 190000, rate: 0.6 }
-  },
-  {
     id: 2, model: "Toyota Alphard", year: 2023, mileage: 12000,
     auctionPrice: 4900000, deliveryPrice: 540000, totalVlad: 5440000,
     grade: "5", color: "Чёрный", engine: "2.5 Hybrid", badge: "Премиум",
@@ -102,43 +95,6 @@ const chinaCars: Car[] = [
 
 function fmt(n: number) {
   return n.toLocaleString("ru-RU") + " ₽"
-}
-
-function LiveDot() {
-  return (
-    <span className="inline-flex items-center gap-1.5">
-      <span className="relative flex h-2 w-2">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-      </span>
-      <span className="text-red-400 text-xs font-mono uppercase tracking-widest">Live</span>
-    </span>
-  )
-}
-
-function AuctionTicker() {
-  const tickers = [
-    "Toyota Crown — ¥2,850,000 → лот #JA44821",
-    "Lexus RX500h — ¥6,100,000 → лот #JA44822",
-    "Honda Odyssey — ¥1,920,000 → лот #JA44823",
-    "Nissan Skyline — ¥3,400,000 → лот #JA44824",
-    "Toyota Vellfire — ¥5,200,000 → лот #JA44825",
-    "Mazda CX-60 — ¥3,750,000 → лот #JA44826",
-  ]
-  return (
-    <div className="overflow-hidden bg-black/60 border border-red-500/20 rounded-lg py-2 px-4 mb-8">
-      <div className="flex items-center gap-3 overflow-hidden">
-        <LiveDot />
-        <div className="overflow-hidden flex-1">
-          <div className="flex gap-8 animate-[ticker_18s_linear_infinite] whitespace-nowrap">
-            {[...tickers, ...tickers].map((t, i) => (
-              <span key={i} className="text-gray-400 text-xs font-mono">{t}</span>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  )
 }
 
 function DetailRow({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
@@ -327,21 +283,17 @@ export function CarsCatalogSection() {
           <TabsContent value="japan">
             <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
-                <div className="flex items-center gap-3 mb-1">
-                  <h3 className="text-white font-bold text-xl">Аукционы Японии</h3>
-                  <LiveDot />
-                </div>
+                <h3 className="text-white font-bold text-xl mb-1">Автомобили из Японии</h3>
                 <p className="text-gray-400 text-sm">Цены под ключ во <span className="text-red-400 font-semibold">Владивостоке</span> · Обновление каждые 3 часа</p>
               </div>
               <div className="flex gap-6 bg-zinc-900 rounded-lg px-6 py-3 border border-zinc-800">
-                <StatsBar label="Лотов сегодня" value="2 841" sub="на аукционах" />
+                <StatsBar label="В наличии" value="180+" sub="автомобилей" />
                 <div className="w-px bg-zinc-700" />
                 <StatsBar label="Куплено" value="47" sub="за эту неделю" />
                 <div className="w-px bg-zinc-700" />
                 <StatsBar label="Ср. доставка" value="38 дн." sub="до Владивостока" />
               </div>
             </div>
-            <AuctionTicker />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {japanCars.map((car) => (
                 <CarCard key={car.id} car={car} city="Владивосток" flag="🇯🇵" showDetail />

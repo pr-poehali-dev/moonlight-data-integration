@@ -22,12 +22,6 @@ const slides = [
     tag: "Классика надёжности",
   },
   {
-    image: "https://cdn.poehali.dev/projects/95ad7d9d-7198-4f62-a0f1-ef6ab57708f4/files/4b217184-2172-453e-b1e1-33447412ff89.jpg",
-    model: "Toyota Land Cruiser 300",
-    origin: "🇯🇵 Япония",
-    tag: "Топ лот аукциона",
-  },
-  {
     image: "https://cdn.poehali.dev/projects/95ad7d9d-7198-4f62-a0f1-ef6ab57708f4/files/4ce15136-15de-48fd-93ba-baccad3174f1.jpg",
     model: "Genesis GV80",
     origin: "🇰🇷 Корея",
