@@ -5,23 +5,23 @@ const testimonials = [
   {
     name: "Алексей Соколов",
     role: "Клиент из Москвы",
-    avatar: "/cybersecurity-expert-man.jpg",
+    avatar: "https://cdn.poehali.dev/projects/95ad7d9d-7198-4f62-a0f1-ef6ab57708f4/files/34c4e3af-a9fe-439c-83ef-35afed9e9d4f.jpg",
     content:
       "Заказал Toyota Land Cruiser из Японии. Всё прошло чисто и быстро — машина пришла в отличном состоянии, ровно как на фото. Комиссия действительно минимальная.",
   },
   {
     name: "Марина Иванова",
     role: "Клиент из Санкт-Петербурга",
-    avatar: "/professional-woman-scientist.png",
+    avatar: "https://cdn.poehali.dev/projects/95ad7d9d-7198-4f62-a0f1-ef6ab57708f4/files/5012cdba-4a9a-4b27-94a8-0eb9d2a14a37.jpg",
     content:
       "Брала Hyundai из Кореи. Менеджер был на связи 24/7, подробно объяснял каждый этап. Получила авто быстрее, чем ожидала. Рекомендую!",
   },
   {
     name: "Дмитрий Пахомов",
     role: "Клиент из Екатеринбурга",
-    avatar: "/asian-woman-tech-developer.jpg",
+    avatar: "https://cdn.poehali.dev/projects/95ad7d9d-7198-4f62-a0f1-ef6ab57708f4/files/a3cdbc25-dae4-4fdd-8117-b1e159ea65ba.jpg",
     content:
-      "Взял BYD из Китая — доволен на 100%. Цена вышла ниже рынка на 15%. CarRich сделали всё: документы, растаможку, учёт. Приехал забирать готовую машину.",
+      "Взял BYD из Китая — доволен на 100%. Цена вышла ниже рынка на 15%. Car CarRich сделали всё: документы, растаможку, учёт. Приехал забирать готовую машину.",
   },
 ]
 

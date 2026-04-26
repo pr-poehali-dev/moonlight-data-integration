@@ -1,4 +1,4 @@
-import { Hero3DWebGL as Hero3D } from "@/components/hero-webgl"
+import { HeroSlider } from "@/components/hero-slider"
 import { FeaturesSection } from "@/components/features-section"
 import { TechnologySection } from "@/components/technology-section"
 import { ApplicationsTimeline } from "@/components/applications-timeline"
@@ -16,7 +16,7 @@ export default function Index() {
     <div className="dark">
       <Navbar />
       <main>
-        <Hero3D />
+        <HeroSlider />
         <FeaturesSection />
         <CarsCatalogSection />
         <section id="technology">
